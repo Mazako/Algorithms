@@ -7,15 +7,15 @@ public class Test {
     private static final Random rng = new Random();
 
     public static void main(String[] args) {
-        double[] tab = createRandomArr(10);
+        double[] tab = createRandomArr(10,1000);
         BubbleSort.sort(tab);
         System.out.println(Arrays.toString(tab));
     }
 
-    private static double[] createRandomArr(int len) {
+    private static double[] createRandomArr(int len, int bound) {
         double[] tab = new double[len];
         for (int i = 0; i < tab.length; i++) {
-            tab[i] = rng.nextInt(1000) + 1;
+            tab[i] = rng.nextInt(bound) + 1;
         }
 
         return tab;
