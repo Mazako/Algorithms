@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 
 public interface BubbleSort {
+//complexity: O(n^2)
 
     static void sort(double[] tab) {
         for (int i = 0; i < tab.length - 1; i++) {
