@@ -7,9 +7,8 @@ public class Test {
     private static final Random rng = new Random();
 
     public static void main(String[] args) {
-        double[] tab = createRandomArr(10,1000);
-        BubbleSort.sort(tab);
-        System.out.println(Arrays.toString(tab));
+        System.out.println(Palindrome.isPalindrome("kamilslhimak"));
+        System.out.println(RecursivePower.power(2.5,4));
     }
 
     private static double[] createRandomArr(int len, int bound) {
