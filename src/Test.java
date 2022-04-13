@@ -8,8 +8,8 @@ public class Test {
 
     public static void main(String[] args) {
         double[] arr = createRandomArr(10, 100);
-        MergeSort.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(Erastotenes.sito(25)));
+
     }
 
     private static double[] createRandomArr(int len, int bound) {
@@ -20,5 +20,6 @@ public class Test {
 
         return tab;
     }
+
 
 }
