@@ -7,8 +7,9 @@ public class Test {
     private static final Random rng = new Random();
 
     public static void main(String[] args) {
-        double[] arr = createRandomArr(10, 100);
-        System.out.println(Arrays.toString(Erastotenes.sito(25)));
+        double[] arr = createRandomArr(5, 100);
+        QuickSort.sort(arr);
+        System.out.println(Arrays.toString(arr));
 
     }
 
@@ -21,5 +22,17 @@ public class Test {
         return tab;
     }
 
+    private static double recursiveArraySum(double[] tab, int l, int r) {
+        if (l == r) {
+            return tab[l];
+        }
+        return tab[l] + recursiveArraySum(tab,l + 1, r);
+    }
+
+    private static int recursiveStrlen(String str) {
+        if (str.length() == 1)
+            return 1;
+        return 1 + recursiveStrlen(str.substring(1));
+    }
 
 }
